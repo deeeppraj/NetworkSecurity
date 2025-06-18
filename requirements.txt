@@ -6,4 +6,5 @@ pymongo[srv]==3.12
 pymongo
 python-dotenv
 certifi
+scikit-learn
 ##-e .
