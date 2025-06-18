@@ -2,4 +2,8 @@ python-dotenv
 pandas
 numpy
 setuptools
+pymongo[srv]==3.12
+pymongo
+python-dotenv
+certifi
 ##-e .
