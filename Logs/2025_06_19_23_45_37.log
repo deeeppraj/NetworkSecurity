@@ -1,5 +1,0 @@
-2025-06-19 23:45:37,195 - root - INFO - Initiating my ingestion process
-2025-06-19 23:45:41,864 - root - INFO - performed train test split
-2025-06-19 23:45:41,865 - root - INFO - Exporting train and test .csv
-2025-06-19 23:45:41,921 - root - INFO - Created my train test.csv
-2025-06-19 23:45:41,922 - root - INFO - Ingestion completed . starting data validation
