@@ -31,3 +31,28 @@ def write_yaml_file(file_path , content , replace:bool = False):
     
     except Exception as e:
         raise CustomException(e,sys)
+    
+
+def save_numpy_array(file_path:str, array:np.array): 
+    ''' 
+    save numpy array in .npy format using 
+    np save function.
+    '''
+    try:
+        dir_path = os.path.dirname(file_path)
+        os.makedirs(dir_path,exist_ok=True)
+        with open(file_path , "wb") as file:
+            np.save(file , array)
+    except Exception as e:
+        raise CustomException(e,sys)
+    
+def save_pikle(file_path:str,obj:object):
+    try:
+        logging.info("saving my pikle file")
+        dir_path = os.path.dirname(file_path)
+        os.makedirs(dir_path, exist_ok=True)
+        with open(file_path, "wb") as file:
+            pickle.dump(obj, file)
+        logging.info("pikle file saved")
+    except Exception as e:
+        raise CustomException(e,sys)
