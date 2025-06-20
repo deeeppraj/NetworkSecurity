@@ -11,7 +11,7 @@ from netwoksecurity.utils.ml_utils.metric import classification
 from netwoksecurity.utils.ml_utils.model import estimator
 import numpy as np
 import pandas as pd
-
+import mlflow
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import r2_score
 from sklearn.tree import DecisionTreeClassifier
@@ -30,6 +30,21 @@ class ModelTrainer:
             self.data_transformation_artifact= data_transform_artifact
         except Exception as e:
             raise CustomException(e,sys)
+        
+    def mlfow_track(self, best_model, classificationMetric):
+        with mlflow.start_run():
+            f1_score = classificationMetric.f1_score
+            precisson_score = classificationMetric.precission_score
+            recall_score = classificationMetric.recall_score
+            
+            mlflow.log_metric("f1_score",  f1_score)
+            mlflow.log_metric("precission" , precisson_score)
+            mlflow.log_metric("recall" , recall_score)
+            mlflow.sklearn.log_model(sk_model=best_model, artifact_path="bestmodel")
+
+
+
+
         
     
     def train_model(self , x_train,y_train,x_test,y_test):
@@ -75,8 +90,20 @@ class ModelTrainer:
              model = trained_model[best_model]
              y_train_pred = model.predict(x_train)
              classification_train_metric = classification.get_classification_score(y_train=y_train,y_pred=y_train_pred)
+             ## track with ml flow
+             self.mlfow_track(best_model=model,classificationMetric=classification_train_metric)
+
+
+
+
              y_test_pred = model.predict(x_test)
              classification_test_metric = classification.get_classification_score(y_train=y_test,y_pred=y_test_pred)
+             self.mlfow_track(best_model=model,classificationMetric=classification_test_metric)
+
+
+             
+
+            
 
              preprocessor = load_obj(file_path=self.data_transformation_artifact.transformed_obj_file_path)
              dir_path = os.path.dirname(self.model_trainer_config.trained_model_file)
