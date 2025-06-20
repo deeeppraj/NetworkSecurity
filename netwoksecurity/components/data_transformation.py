@@ -60,12 +60,12 @@ class DataTransformation:
             #training dataframe
             input_feat_train_df = train_data.drop(TARGET_COLUMN, axis=1)
             target_feature_train_df = train_data[TARGET_COLUMN]
-            target_feature_train_df = target_feature_train_df.map({-1:0})
+            target_feature_train_df = target_feature_train_df.replace(-1,0)
 
             #testing dataframe
             input_feat_test_df = test_data.drop(TARGET_COLUMN,axis=1)
             target_feat_test_df = test_data[TARGET_COLUMN]
-            target_feat_test_df = target_feat_test_df.map({-1:0})
+            target_feat_test_df = target_feat_test_df.replace(-1,0)
 
             # Handling my null values:
             preprocessor:Pipeline = self.get_null_values_pipeline()
@@ -73,9 +73,26 @@ class DataTransformation:
             transformed_input_feat_test_df = preprocessor.transform(input_feat_test_df)
 
             # combining this with my output to get a numpy array
+            # Convert to numpy arrays
+            train_y = np.array(target_feature_train_df)
+            test_y = np.array(target_feat_test_df)
 
-            train_array = np.c_[transformed_input_feat_train_df,np.array(target_feature_train_df)]
-            test_array = np.c_[transformed_input_feat_test_df,np.array(target_feat_test_df)]
+            # Filter out rows where target is NaN
+            train_mask = ~np.isnan(train_y)
+            test_mask = ~np.isnan(test_y)
+
+            transformed_input_feat_train_df = transformed_input_feat_train_df[train_mask]
+            train_y = train_y[train_mask]
+
+            transformed_input_feat_test_df = transformed_input_feat_test_df[test_mask]
+            test_y = test_y[test_mask]
+
+            # Combine features and target
+            train_array = np.c_[transformed_input_feat_train_df, train_y]
+            test_array = np.c_[transformed_input_feat_test_df, test_y]
+
+
+            
 
             save_numpy_array(file_path=self.data_transformation_config.transformed_train_file_path , array=train_array)
             save_numpy_array(file_path=self.data_transformation_config.transformed_test_file_path , array=test_array)

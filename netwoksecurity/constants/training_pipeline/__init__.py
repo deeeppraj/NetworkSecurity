@@ -12,6 +12,8 @@ DATA_INGESTION_DIR:str = "data_ingestion"
 DATA_INGESTION_FEAT:str = 'feature_stor'
 DATA_INGESTION_INGESTED:str = 'ingested'
 TRAIN_TEST_SPLIT :float = 0.2
+SAVED_MODEL_DIR:str = os.path.join("saved_models")
+MODEL_PICKLE_FILE = "model.pkl"
 
 
 '''
@@ -54,3 +56,13 @@ DATA_TRANSFORMATION_TRAIN_FILE_PATH: str = "train.npy"
 
 DATA_TRANSFORMATION_TEST_FILE_PATH: str = "test.npy"
 
+
+"""
+Model Trainer ralated constant start with MODE TRAINER VAR NAME
+"""
+
+MODEL_TRAINER_DIR_NAME: str = "model_trainer"
+MODEL_TRAINER_TRAINED_MODEL_DIR: str = "trained_model"
+MODEL_TRAINER_TRAINED_MODEL_NAME: str = "model.pkl"
+MODEL_TRAINER_EXPECTED_SCORE: float = 0.6
+MODEL_TRAINER_OVER_FIITING_UNDER_FITTING_THRESHOLD: float = 0.05
