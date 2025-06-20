@@ -11,4 +11,5 @@ scipy
 dill
 pyyaml
 mlflow
+dagshub
 ##-e .
