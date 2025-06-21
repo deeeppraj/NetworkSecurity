@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://networksecurity1.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_dfc31a6bf38d45d18810608c8b8ffd8f }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_8505e25863414be8a59fab5326663751 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_20c9aefa95de4d3a8415a90fc265bff7 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_6a295d5e399249439cfb4b7e17d4e891 }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: networksecurity1.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_dfc31a6bf38d45d18810608c8b8ffd8f }}/networksecurity:${{ github.sha }}
+        tags: networksecurity1.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_20c9aefa95de4d3a8415a90fc265bff7 }}/ns:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'Network-Security'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_9cdae78b1c8b45d6bd715a356092bf9c }}
-        images: 'networksecurity1.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_dfc31a6bf38d45d18810608c8b8ffd8f }}/networksecurity:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cf0686cac8be474db435a6a414b6b53c }}
+        images: 'networksecurity1.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_20c9aefa95de4d3a8415a90fc265bff7 }}/ns:${{ github.sha }}'
