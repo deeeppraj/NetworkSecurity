@@ -1,0 +1,21 @@
+2025-06-22 00:01:13,490 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-22 00:01:13,497 - dagshub - INFO - Accessing as deeeppraj
+2025-06-22 00:01:14,098 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/deeeppraj/NetworkSecurity "HTTP/1.1 200 OK"
+2025-06-22 00:01:14,600 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-22 00:01:14,604 - dagshub - INFO - Initialized MLflow to track repo "deeeppraj/NetworkSecurity"
+2025-06-22 00:01:14,605 - dagshub - INFO - Repository deeeppraj/NetworkSecurity initialized!
+2025-06-22 00:01:14,727 - werkzeug - WARNING -  * Debugger is active!
+2025-06-22 00:01:14,732 - werkzeug - INFO -  * Debugger PIN: 143-507-764
+2025-06-22 00:01:34,954 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:01:34] "[33mGET /docs HTTP/1.1[0m" 404 -
+2025-06-22 00:01:41,506 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:01:41] "[32mGET / HTTP/1.1[0m" 302 -
+2025-06-22 00:01:41,513 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:01:41] "[33mGET /docs HTTP/1.1[0m" 404 -
+2025-06-22 00:02:09,266 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:02:09] "[33mGET /docs HTTP/1.1[0m" 404 -
+2025-06-22 00:03:29,124 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:03:29] "[33mGET /docs HTTP/1.1[0m" 404 -
+2025-06-22 00:03:29,972 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:03:29] "[33mGET /docs HTTP/1.1[0m" 404 -
+2025-06-22 00:03:30,190 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:03:30] "[33mGET /docs HTTP/1.1[0m" 404 -
+2025-06-22 00:03:30,370 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:03:30] "[33mGET /docs HTTP/1.1[0m" 404 -
+2025-06-22 00:03:33,518 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:03:33] "[32mGET / HTTP/1.1[0m" 302 -
+2025-06-22 00:03:33,526 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:03:33] "[33mGET /docs HTTP/1.1[0m" 404 -
+2025-06-22 00:03:36,425 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:03:36] "[32mGET / HTTP/1.1[0m" 302 -
+2025-06-22 00:03:36,432 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:03:36] "[33mGET /docs HTTP/1.1[0m" 404 -
+2025-06-22 00:04:35,472 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:04:35] "[33mGET /docs HTTP/1.1[0m" 404 -

@@ -1,0 +1,27 @@
+2025-06-20 23:40:31,883 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-20 23:40:31,896 - dagshub - INFO - Accessing as deeeppraj
+2025-06-20 23:40:32,499 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/deeeppraj/NetworkSecurity "HTTP/1.1 200 OK"
+2025-06-20 23:40:33,113 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-20 23:40:33,119 - dagshub - INFO - Initialized MLflow to track repo "deeeppraj/NetworkSecurity"
+2025-06-20 23:40:33,121 - dagshub - INFO - Repository deeeppraj/NetworkSecurity initialized!
+2025-06-20 23:40:33,127 - root - INFO - Initiating my ingestion process
+2025-06-20 23:40:37,736 - root - INFO - performed train test split
+2025-06-20 23:40:37,736 - root - INFO - Exporting train and test .csv
+2025-06-20 23:40:37,797 - root - INFO - Created my train test.csv
+2025-06-20 23:40:37,798 - root - INFO - Ingestion completed . starting data validation
+2025-06-20 23:40:37,912 - root - INFO - required no. of columns 2
+2025-06-20 23:40:37,912 - root - INFO - data frame has no. of columns 31
+2025-06-20 23:40:37,912 - root - INFO - required no. of columns 2
+2025-06-20 23:40:37,912 - root - INFO - data frame has no. of columns 31
+2025-06-20 23:40:38,066 - root - INFO - data validation completed
+2025-06-20 23:40:38,066 - root - INFO - Initiating my data transformation processs
+2025-06-20 23:40:38,066 - root - INFO - starting.....
+2025-06-20 23:40:38,089 - root - INFO - read my train and test data as pandas dataframe
+2025-06-20 23:40:38,092 - root - INFO - Entered to get null values
+2025-06-20 23:40:38,092 - root - INFO - created my imputer pipeline with values as {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+2025-06-20 23:40:38,115 - root - INFO - saving my pikle file
+2025-06-20 23:40:38,118 - root - INFO - pikle file saved
+2025-06-20 23:40:38,118 - root - INFO - saving my pikle file
+2025-06-20 23:40:38,121 - root - INFO - pikle file saved
+2025-06-20 23:40:38,121 - root - INFO - saved my numpy array and my preprocessor.pkl file
+2025-06-20 23:40:38,122 - root - INFO - starting model training ....

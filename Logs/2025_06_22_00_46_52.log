@@ -1,0 +1,15 @@
+2025-06-22 00:46:56,733 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-22 00:46:56,745 - dagshub - INFO - Accessing as deeeppraj
+2025-06-22 00:46:57,416 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/deeeppraj/NetworkSecurity "HTTP/1.1 200 OK"
+2025-06-22 00:46:58,024 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-22 00:46:58,028 - dagshub - INFO - Initialized MLflow to track repo "deeeppraj/NetworkSecurity"
+2025-06-22 00:46:58,029 - dagshub - INFO - Repository deeeppraj/NetworkSecurity initialized!
+2025-06-22 00:46:58,149 - werkzeug - WARNING -  * Debugger is active!
+2025-06-22 00:46:58,153 - werkzeug - INFO -  * Debugger PIN: 143-507-764
+2025-06-22 00:47:04,715 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:47:04] "[31m[1mPOST /download HTTP/1.1[0m" 405 -
+2025-06-22 00:47:08,726 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:47:08] "GET /upload HTTP/1.1" 200 -
+2025-06-22 00:47:16,347 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:47:16] "POST /predict HTTP/1.1" 200 -
+2025-06-22 00:48:01,751 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:48:01] "POST /predict HTTP/1.1" 200 -
+2025-06-22 00:48:12,200 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:48:12] "POST /predict HTTP/1.1" 200 -
+2025-06-22 00:48:28,601 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:48:28] "POST /predict HTTP/1.1" 200 -
+2025-06-22 00:48:34,840 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:48:34] "POST /predict HTTP/1.1" 200 -

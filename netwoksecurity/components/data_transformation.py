@@ -97,6 +97,7 @@ class DataTransformation:
             save_numpy_array(file_path=self.data_transformation_config.transformed_train_file_path , array=train_array)
             save_numpy_array(file_path=self.data_transformation_config.transformed_test_file_path , array=test_array)
             save_pikle(file_path=self.data_transformation_config.transformed_object_file_path, obj=preprocessor)
+            save_pikle(file_path="final_model/preprocessor.pkl" , obj= preprocessor)
             logging.info("saved my numpy array and my preprocessor.pkl file")
 
             data_transformation_artifact = DataTransformartifact(

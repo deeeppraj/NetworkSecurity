@@ -1,0 +1,9 @@
+2025-06-21 09:27:56,205 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-21 09:27:56,211 - dagshub - INFO - Accessing as deeeppraj
+2025-06-21 09:27:56,731 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/deeeppraj/NetworkSecurity "HTTP/1.1 200 OK"
+2025-06-21 09:27:57,201 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-21 09:27:57,206 - dagshub - INFO - Initialized MLflow to track repo "deeeppraj/NetworkSecurity"
+2025-06-21 09:27:57,207 - dagshub - INFO - Repository deeeppraj/NetworkSecurity initialized!
+2025-06-21 09:27:57,276 - werkzeug - WARNING -  * Debugger is active!
+2025-06-21 09:27:57,279 - werkzeug - INFO -  * Debugger PIN: 143-507-764
+2025-06-21 09:27:58,401 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Deepraj\\Desktop\\Projects\\NetworkSecurity\\app.py', reloading

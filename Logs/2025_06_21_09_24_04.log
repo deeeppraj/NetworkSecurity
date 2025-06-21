@@ -1,0 +1,15 @@
+2025-06-21 09:24:07,446 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-21 09:24:07,451 - dagshub - INFO - Accessing as deeeppraj
+2025-06-21 09:24:07,952 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/deeeppraj/NetworkSecurity "HTTP/1.1 200 OK"
+2025-06-21 09:24:08,461 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-21 09:24:08,466 - dagshub - INFO - Initialized MLflow to track repo "deeeppraj/NetworkSecurity"
+2025-06-21 09:24:08,467 - dagshub - INFO - Repository deeeppraj/NetworkSecurity initialized!
+2025-06-21 09:24:08,540 - werkzeug - WARNING -  * Debugger is active!
+2025-06-21 09:24:08,543 - werkzeug - INFO -  * Debugger PIN: 143-507-764
+2025-06-21 09:24:08,596 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 09:24:08] "[32mGET / HTTP/1.1[0m" 302 -
+2025-06-21 09:24:08,611 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 09:24:08] "[35m[1mGET /train HTTP/1.1[0m" 500 -
+2025-06-21 09:24:08,661 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 09:24:08] "GET /train?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-06-21 09:24:08,664 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 09:24:08] "GET /train?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-06-21 09:24:08,676 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 09:24:08] "GET /train?__debugger__=yes&cmd=resource&f=console.png&s=GEr3WRJJicvhuszbAbGG HTTP/1.1" 200 -
+2025-06-21 09:24:08,687 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 09:24:08] "GET /train?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-06-21 09:26:25,189 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Deepraj\\Desktop\\Projects\\NetworkSecurity\\netwoksecurity\\pipeline\\training_pipeline.py', reloading

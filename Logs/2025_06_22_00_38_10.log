@@ -1,0 +1,11 @@
+2025-06-22 00:38:14,341 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-22 00:38:14,355 - dagshub - INFO - Accessing as deeeppraj
+2025-06-22 00:38:14,902 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/deeeppraj/NetworkSecurity "HTTP/1.1 200 OK"
+2025-06-22 00:38:15,411 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-22 00:38:15,416 - dagshub - INFO - Initialized MLflow to track repo "deeeppraj/NetworkSecurity"
+2025-06-22 00:38:15,418 - dagshub - INFO - Repository deeeppraj/NetworkSecurity initialized!
+2025-06-22 00:38:15,509 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-22 00:38:15,510 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-22 00:38:15,511 - werkzeug - INFO -  * Restarting with stat
+2025-06-22 00:46:51,897 - werkzeug - INFO -  * Restarting with stat

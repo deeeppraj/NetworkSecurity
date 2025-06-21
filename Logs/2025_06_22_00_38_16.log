@@ -1,0 +1,21 @@
+2025-06-22 00:38:20,122 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-22 00:38:20,131 - dagshub - INFO - Accessing as deeeppraj
+2025-06-22 00:38:20,838 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/deeeppraj/NetworkSecurity "HTTP/1.1 200 OK"
+2025-06-22 00:38:21,349 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-22 00:38:21,352 - dagshub - INFO - Initialized MLflow to track repo "deeeppraj/NetworkSecurity"
+2025-06-22 00:38:21,354 - dagshub - INFO - Repository deeeppraj/NetworkSecurity initialized!
+2025-06-22 00:38:21,441 - werkzeug - WARNING -  * Debugger is active!
+2025-06-22 00:38:21,446 - werkzeug - INFO -  * Debugger PIN: 143-507-764
+2025-06-22 00:38:41,372 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:38:41] "GET /upload HTTP/1.1" 200 -
+2025-06-22 00:38:55,455 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:38:55] "POST /predict HTTP/1.1" 200 -
+2025-06-22 00:39:11,069 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:39:11] "POST /predict HTTP/1.1" 200 -
+2025-06-22 00:40:14,218 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:40:14] "POST /predict HTTP/1.1" 200 -
+2025-06-22 00:40:26,814 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:40:26] "POST /predict HTTP/1.1" 200 -
+2025-06-22 00:41:03,956 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:41:03] "POST /predict HTTP/1.1" 200 -
+2025-06-22 00:43:14,579 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:43:14] "POST /predict HTTP/1.1" 200 -
+2025-06-22 00:43:19,537 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:43:19] "[35m[1mPOST /download HTTP/1.1[0m" 500 -
+2025-06-22 00:43:19,710 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:43:19] "GET /download?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-06-22 00:43:19,711 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:43:19] "GET /download?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-06-22 00:43:19,755 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:43:19] "GET /download?__debugger__=yes&cmd=resource&f=console.png&s=j3TvWmULbB0L4rYlO2zj HTTP/1.1" 200 -
+2025-06-22 00:43:19,768 - werkzeug - INFO - 127.0.0.1 - - [22/Jun/2025 00:43:19] "GET /download?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-06-22 00:46:50,755 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Deepraj\\Desktop\\Projects\\NetworkSecurity\\app.py', reloading

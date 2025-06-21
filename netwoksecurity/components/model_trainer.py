@@ -44,7 +44,7 @@ class ModelTrainer:
             mlflow.log_metric("f1_score",  f1_score)
             mlflow.log_metric("precission" , precisson_score)
             mlflow.log_metric("recall" , recall_score)
-            mlflow.sklearn.log_model(sk_model=best_model, artifact_path="bestmodel")
+            #mlflow.sklearn.log_model(sk_model=best_model, artifact_path="bestmodel")
 
 
 
@@ -116,6 +116,8 @@ class ModelTrainer:
              network_model = estimator.NetworkModel(processor=preprocessor,model=model)
              save_obj(file_path=self.model_trainer_config.trained_model_file , obj= network_model)
 
+             save_obj(file_path="final_model/model.pkl" , obj = model)
+            
              model_trainer_artifact = ModelTrainerArtifact(
                  trained_model_file_path=self.model_trainer_config.trained_model_file,
                  trained_metric_artifact= classification_train_metric,
@@ -160,4 +162,4 @@ class ModelTrainer:
             return train
 
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomException(e,sys) 

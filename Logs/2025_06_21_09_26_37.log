@@ -1,0 +1,36 @@
+2025-06-21 09:26:40,499 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-21 09:26:40,508 - dagshub - INFO - Accessing as deeeppraj
+2025-06-21 09:26:41,001 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/deeeppraj/NetworkSecurity "HTTP/1.1 200 OK"
+2025-06-21 09:26:41,496 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2025-06-21 09:26:41,500 - dagshub - INFO - Initialized MLflow to track repo "deeeppraj/NetworkSecurity"
+2025-06-21 09:26:41,502 - dagshub - INFO - Repository deeeppraj/NetworkSecurity initialized!
+2025-06-21 09:26:41,564 - werkzeug - WARNING -  * Debugger is active!
+2025-06-21 09:26:41,567 - werkzeug - INFO -  * Debugger PIN: 143-507-764
+2025-06-21 09:26:41,616 - root - INFO - initiate data ingestion
+2025-06-21 09:26:45,541 - root - INFO - performed train test split
+2025-06-21 09:26:45,542 - root - INFO - Exporting train and test .csv
+2025-06-21 09:26:45,655 - root - INFO - Created my train test.csv
+2025-06-21 09:26:45,656 - root - INFO - data ingestion completed . generated data ingestion artifact ->DataIngestionArtifact(trained_file_path='artifacts\\06_21_2025_09_26_38\\data_ingestion\\ingested\\train.csv', test_file_path='artifacts\\06_21_2025_09_26_38\\data_ingestion\\ingested\\test.csv')
+2025-06-21 09:26:45,656 - root - INFO - starting data validation
+2025-06-21 09:26:45,763 - root - INFO - required no. of columns 2
+2025-06-21 09:26:45,763 - root - INFO - data frame has no. of columns 31
+2025-06-21 09:26:45,763 - root - INFO - required no. of columns 2
+2025-06-21 09:26:45,763 - root - INFO - data frame has no. of columns 31
+2025-06-21 09:26:45,987 - root - INFO - completed with DataValidationArtifact(validation_status=False, validated_train_file_path='artifacts\\06_21_2025_09_26_38\\data_ingestion\\ingested\\train.csv', validated_test_file_path='artifacts\\06_21_2025_09_26_38\\data_ingestion\\ingested\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='artifacts\\06_21_2025_09_26_38\\data_validation\\drift_report\\report.yaml')
+2025-06-21 09:26:45,987 - root - INFO - Initiating my data transformation processs
+2025-06-21 09:26:45,988 - root - INFO - starting.....
+2025-06-21 09:26:46,025 - root - INFO - read my train and test data as pandas dataframe
+2025-06-21 09:26:46,029 - root - INFO - Entered to get null values
+2025-06-21 09:26:46,029 - root - INFO - created my imputer pipeline with values as {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+2025-06-21 09:26:46,053 - root - INFO - saving my pikle file
+2025-06-21 09:26:46,056 - root - INFO - pikle file saved
+2025-06-21 09:26:46,056 - root - INFO - saving my pikle file
+2025-06-21 09:26:46,059 - root - INFO - pikle file saved
+2025-06-21 09:26:46,059 - root - INFO - saved my numpy array and my preprocessor.pkl file
+2025-06-21 09:26:46,060 - root - INFO - completed data transformation DataTransformartifact(transformed_obj_file_path='artifacts\\06_21_2025_09_26_38\\data_transformation\\transformed_object\\preprocessing.pkl', transformed_train_file_path='artifacts\\06_21_2025_09_26_38\\data_transformation\\transformed\\train.npy', transformed_test_file_path='artifacts\\06_21_2025_09_26_38\\data_transformation\\transformed\\test.npy')
+2025-06-21 09:27:15,499 - root - INFO - saving object in utils file
+2025-06-21 09:27:15,519 - root - INFO - saving object in utils file
+2025-06-21 09:27:15,535 - root - INFO - model trainer artifact ModelTrainerArtifact(trained_model_file_path='artifacts\\06_21_2025_09_26_38\\model_trainer\\trained_model\\model.pkl', trained_metric_artifact=ClassificationArtifact(f1_score=0.9915556007732221, precission_score=0.9890399837629389, recall_score=0.9940840473276213), test_metric_artifact=ClassificationArtifact(f1_score=0.9711576451995259, precission_score=0.963166144200627, recall_score=0.9792828685258964))
+2025-06-21 09:27:15,536 - root - INFO - completed model training ModelTrainerArtifact(trained_model_file_path='artifacts\\06_21_2025_09_26_38\\model_trainer\\trained_model\\model.pkl', trained_metric_artifact=ClassificationArtifact(f1_score=0.9915556007732221, precission_score=0.9890399837629389, recall_score=0.9940840473276213), test_metric_artifact=ClassificationArtifact(f1_score=0.9711576451995259, precission_score=0.963166144200627, recall_score=0.9792828685258964))
+2025-06-21 09:27:15,537 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 09:27:15] "GET /train HTTP/1.1" 200 -
+2025-06-21 09:27:51,963 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Deepraj\\Desktop\\Projects\\NetworkSecurity\\app.py', reloading
