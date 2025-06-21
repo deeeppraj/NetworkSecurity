@@ -32,6 +32,7 @@ jobs:
         push: true
         tags: networksecurity1.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_dfc31a6bf38d45d18810608c8b8ffd8f }}/networksecurity:${{ github.sha }}
         file: ./Dockerfile
+        
 
   deploy:
     runs-on: ubuntu-latest
