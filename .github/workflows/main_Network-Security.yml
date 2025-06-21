@@ -40,6 +40,6 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'network-security'
-        slot-name: 'production'
+        #slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile }}
         images: 'networksecurity1.azurecr.io/ns/ns:${{ github.sha }}'
